@@ -126,6 +126,7 @@ public class DailyTabFragment extends Fragment {
 
     private void fetchPosts() {
 
+        // TODO: Move this to a common place (resources)
         String URL = "https://test.bloomingmoms.lk/api/dblog";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, URL, null, new Response.Listener<JSONArray>() {
