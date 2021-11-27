@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Baby App</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="types_array">
+        <item>after_pregnant</item>
+        <item>before_pregnant</item>
+        <item>baby_was_born</item>
+    </string-array>
+</resources>
