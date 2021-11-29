@@ -113,7 +113,8 @@ public class MonthlyTabFragment extends Fragment {
 
     private void fetchPosts() {
 
-        String URL = "https://test.bloomingmoms.lk/api/mblog";
+//        String URL = "https://test.bloomingmoms.lk/api/mblog";
+        String URL = getResources().getString(R.string.test_env) + "/api/mblog";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, URL, null, new Response.Listener<JSONArray>() {
             @Override

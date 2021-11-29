@@ -7,4 +7,6 @@
         <item>before_pregnant</item>
         <item>baby_was_born</item>
     </string-array>
+    <string name="dev_env">http://localhost:8080</string>
+    <string name="test_env">https://test.bloomingmoms.lk</string>
 </resources>

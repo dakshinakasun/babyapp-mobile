@@ -17,13 +17,14 @@ import com.example.babyapp.Fragment.LoginTabFragment;
 import com.example.babyapp.Interfaces.API;
 import com.example.babyapp.Interfaces.APIListener;
 import com.example.babyapp.MainActivity;
+import com.example.babyapp.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class WebAPI implements API {
 
-    public static final String BASE_URL = "https://test.bloomingmoms.lk/";
+//    public static final String BASE_URL = "https://test.bloomingmoms.lk/";
 
     private final Application mApplication;
     private RequestQueue mRequestQueue;
@@ -34,7 +35,7 @@ public class WebAPI implements API {
     }
 
     public void login(String email, String password, final APIListener listener){
-        String url = BASE_URL + "api/login";
+        String url = mApplication.getResources().getString(R.string.test_env) + "/api/login";
         JSONObject jsonObject = new JSONObject();
 
         try {

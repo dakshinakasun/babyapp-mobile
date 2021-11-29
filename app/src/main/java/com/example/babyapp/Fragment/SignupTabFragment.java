@@ -182,7 +182,8 @@ public class SignupTabFragment extends Fragment implements AdapterView.OnItemSel
 
     private void postDataUsingVolley(String mUsername, String mEmail, String mPassword, String mType, String mPdate, String mBdate, String mRoll) {
 
-        String url = "https://test.bloomingmoms.lk/api/register";
+//        String url = "https://test.bloomingmoms.lk/api/register";
+        String url = getResources().getString(R.string.test_env) + "/api/register";
 
         RequestQueue queue = Volley.newRequestQueue(getContext());
 

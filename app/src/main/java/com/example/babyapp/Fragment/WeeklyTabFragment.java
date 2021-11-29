@@ -115,7 +115,8 @@ public class WeeklyTabFragment extends Fragment {
 
     private void fetchPosts() {
 
-        String URL = "https://test.bloomingmoms.lk/api/wblog";
+//        String URL = "https://test.bloomingmoms.lk/api/wblog";
+        String URL = getResources().getString(R.string.test_env) + "/api/wblog";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, URL, null, new Response.Listener<JSONArray>() {
             @Override
